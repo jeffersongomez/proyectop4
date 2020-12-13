@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: url(../recursos/img/1.jpg);
+    background-size: 100% 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    margin: auto;
+    max-width: 80%;
+    overflow: hidden;
+}
+header{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: url('../recursos/img/programando-en-python-90.jpeg.jpg') #49a3d6;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+
+header:before{
+    content: '';
+    position: absolute;
+    top:0 ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+header .boton
+{
+    position: relative;
+    background-color: inherit;
+    padding: 20px 100px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(191, 191, 191);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+header .boton :hover
+{
+    color: rgb(255, 255, 255);
+}
+header .logo{
+    width: 10px;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+}
+header .logo .img img{
+    width: 50px;
+}
+header .menu{
+    width: 100%;
+    background-color: rgb(64, 64, 64);
+    border-radius: 20px;
+    position: fixed;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+header .menu img
+{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+header .menu a{
+    
+    margin:  30px 20px;
+    color: rgb(185, 180, 198);
+    padding-bottom: 9px;
+    text-decoration: none;
+    border-bottom:  20px solid transparent;
+    font-size: 1rem;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid #fff;
+    color: rgb(255, 255, 255);
+}
+
+header .contenedor-texto{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 170px;
+}
+
+header .contenedor-texto .texto{
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+header .contenedor-texto .texto h1, h2{
+
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 0;
+}
+
+header .contenedor-texto .texto .nombre{
+
+    margin-bottom: 10px;
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+header .contenedor-texto .texto .profesion{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.main .contenedor
+{
+    max-width: 1000px;
+    overflow: visible;
+}
+.main .trabajos
+{
+    padding: 20px 0;
+}
+
+.main .trabajos .contenedor
+{
+
+    max-width: 100%;
+    overflow: hidden;
+    
+}
+.main .trabajos .contenedor-trabajos
+{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /* background-color: rgb(125, 235, 22); */
+    display: flex;
+    flex-direction: row;
+    /* Sino caben que se desplase hacia abajo */
+    flex-wrap: wrap;
+    /*repartir espacio entre las imagenes*/
+    justify-content: space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo
+{
+    width: 23%;
+    margin-bottom: 40px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .thumb{
+
+    width: 100%;
+    margin-bottom: 10px;
+
+
+}
+.main .trabajos .contenedor-trabajos .trabajo .thumb img{
+
+    width: 100%;
+    vertical-align:top;
+    border-radius: 5px;
+
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .titulo{
+
+    text-align: top;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .detalle{
+
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.main .trabajos .otros
+{
+    background-color: rgb(202, 202, 202);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    /* Sino caben que se desplase hacia abajo */
+    flex-wrap: wrap;
+    /*repartir espacio entre las imagenes*/
+    justify-content: space-between;
+
+}
+.main .trabajos .otros .page
+{
+    
+    width: 25%;
+
+}
+
+.main .trabajos .otros .thumb
+{
+
+    width: 100%;
+    padding: 5px;
+}
+
+.main .trabajos .otros .thumb img
+{
+    width: 100%;
+    vertical-align:top;
+    height: 16rem;
+}
+
+
+.main .trabajos .jobs
+{
+    padding: 15px;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(122, 122, 122);
+    display: flex;
+    flex-direction: row;
+    /* Sino caben que se desplase hacia abajo */
+    flex-wrap: wrap;
+    /*repartir espacio entre las imagenes*/
+    justify-content: space-between;
+
+}
+.main .trabajos .jobs .trabajador
+{
+    background-color: rgb(112, 112, 130);
+    width: 28%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+.main .trabajos .jobs .trabajador .thumb
+{
+    margin: 5px;
+    width: 95%;
+}
+
+.main .trabajos .jobs .trabajador .thumb img
+{
+
+    width: 100%;
+    vertical-align:top;
+    border-radius: 10px;
+
+}
+
+.main .trabajos .jobs .trabajador .descripcion
+{
+    text-align: center;
+}
+
+.main .trabajos .jobs .trabajador .descripcion .nombre
+{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .jobs .trabajador .descripcion .cargo
+{
+    font-size: 17px;
+    color: #000000;
+}
+
+.main .trabajos .jobs .trabajador .descripcion .descr
+{
+    text-align: left;
+    margin: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.main .trabajos .contacto
+{
+    padding: 15px;
+    width: 80%;
+    background-color: rgb(71, 71, 71);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main .trabajos .contacto h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: #292929;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.main .trabajos .contacto .formulario{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.main .trabajos .contacto .formulario input[type="text"],
+.main .trabajos .contacto .formulario input[type="email"],
+.main .trabajos .contacto .formulario textarea{
+
+
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 25px;
+    font-style: normal;
+    color: #323232;
+}
+
+.main .trabajos .contacto .formulario input[type="text"],
+.main .trabajos .contacto .formulario input[type="email"]
+{
+    width: 49%;
+    margin-bottom: 15px;
+
+}
+
+.main .trabajos .contacto .formulario textarea{
+
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    margin-bottom: 15px;
+}
+
+.main .trabajos .contacto  .formulario .boton
+{
+    margin: auto;
+    background-color: #3895ea;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 25px 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .informacion
+{
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    margin-top: 10px;
+    display: flex;
+}
+footer .informacion h2
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+}
+footer .informacion h3{
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin:5px 0 ;
+    text-align: center;
+}
+
+footer .informacion .info{
+    padding:10px;
+    width: 35%;
+    /* margin-bottom: 20px;  */
+}
+
+
+
+
+
+
+
+
+
+
+
+footer .informacion .redes{
+    padding:10px;
+    width: 30%;
+    text-align: center;
+    /* display: flex; */
+}
+
+footer .informacion .acerca{
+    padding:10px;
+    width: 35%;
+    text-align: center;
+}
+
+footer .informacion .redes img{
+    align-content: center;
+    margin: auto;
+    /* padding: 0 10px; */
+
+}
+footer .informacion .redes img:hover{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1000px)
+{
+    header .menu{
+        text-align: center;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    header .contenedor-texto .texto .nombre
+    {
+        font-size: 35px;
+    }
+    header .contenedor-texto .texto .profesion
+    {
+        font-size: 18px;
+    }
+
+    .footer .redes-sociales .contenedor
+    {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+  
+}
+
+
+@media screen and (max-width:360px)
+{
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 100%;
+    }
+
+}
